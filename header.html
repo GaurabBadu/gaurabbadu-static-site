@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Gaurab Badu | Page Title</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div> 
+    <div class="container-fluid nav-bar sticky-top px-4 py-2 py-lg-0">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="index.html" class="navbar-brand p-0">
+                <h1 class="display-6 text-dark"><i class="fas fa-globe text-primary me-3"></i>Gaurab Badu</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="projects.html" class="nav-item nav-link">Projects</a>
+                    <a href="experience.html" class="nav-item nav-link">Experience</a>
+                    <a href="publication.html" class="nav-item nav-link">Publication</a>
+                </div>
+                <div class="team-icon d-none d-xl-flex justify-content-center me-3">
+                    <a class="btn btn-square btn-light rounded-circle mx-1" href="https://github.com/"><i class="fab fa-github"></i></a>
+                    <a class="btn btn-square btn-light rounded-circle mx-1" href="mailto:email@example.com"><i class="fas fa-envelope"></i></a>
+                    <a class="btn btn-square btn-light rounded-circle mx-1" href="https://www.researchgate.net/profile/Gaurab-Badu"><i class="fab fa-researchgate"></i></a>
+                    <a class="btn btn-square btn-light rounded-circle mx-1" href="https://www.linkedin.com/in/gaurabbadu"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    ```
+
+### 🛠️ Required Manual Steps for Each Page
+
+Since the Django logic for the active link and the page title has been removed, you must do the following for each file (`about.html`, `projects.html`, etc.):
+
+1.  **Update the `<title>`:** Change `<title>Gaurab Badu | Page Title</title>` to the correct title (e.g., `Gaurab Badu | About Me`).
+2.  **Set the Active Link:** Find the corresponding link in the navbar and manually add the class `active`.
+
+    For example, in **`about.html`**, you would change:
+    ```html
+    <a href="about.html" class="nav-item nav-link">About</a> 
+    ```
+    to:
+    ```html
+    <a href="about.html" class="nav-item nav-link active">About</a>
+    ```
