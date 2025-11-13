@@ -1,4 +1,6 @@
-
+.bg-gallery-pink {
+    background-color: #B03060 !important; /* Use !important to ensure it overrides bg-light */
+}
 /*** Spinner Start ***/
 /*** Spinner ***/
 #spinner {
