@@ -1,6 +1,4 @@
-.bg-gallery-pink {
-    background-color: #B03060 !important; /* Use !important to ensure it overrides bg-light */
-}
+
 /*** Spinner Start ***/
 /*** Spinner ***/
 #spinner {
@@ -260,8 +258,7 @@
     height: 100%;
     left: 0;
     bottom: 0;
-    background: rgba(10, 20, 50, 0.8);
-    
+    background: rgba(0, 0, 0, .7);
     display: flex;
     align-items: center;
 }
@@ -432,12 +429,6 @@
 
 
 /*** Attractions Start ***/
-/* --- FIX: Target the Owl Carousel wrapper (.owl-item) for ultimate gap elimination --- */
-.attractions-carousel .owl-item {
-    padding: 0px !important;
-    margin: 0px !important;
-}
-/* --- END FIX --- */
 .attractions {
     position: relative;
     overflow: hidden;
@@ -484,12 +475,6 @@
     border-radius: 10px;
     transition: 0.5s;
     z-index: 1;
-
-
-     /* --- CRITICAL FIX FOR TIGHT SPACING --- */
-    padding: 0px !important; /* Removes internal padding inherited from Bootstrap col classes */
-    margin: 0px !important; /* Ensures no external margin from Bootstrap is inherited */
-    /* -------------------------------------- */
 }
 
 .attractions .attractions-item::after {
@@ -942,37 +927,3 @@
     background: var(--bs-dark);
 }
 /*** copyright end ***/
-
-/* === REMOVE ALL GAPS BETWEEN OWL CAROUSEL ITEMS === */
-.attractions-carousel .owl-stage-outer,
-.attractions-carousel .owl-stage,
-.attractions-carousel .owl-item {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-.attractions-carousel .owl-stage {
-  display: flex !important;
-  gap: 0 !important;
-}
-
-.attractions-carousel .owl-item {
-  transform: translateZ(0); /* fixes fractional pixel seams */
-}
-
-.attractions-carousel .attractions-item {
-  padding: 0 !important; /* remove extra space inside */
-  margin: 0 !important;
-  border: none !important;
-  overflow: hidden;
-}
-
-.attractions-carousel .attractions-item img {
-  display: block !important;
-  width: 100% !important;
-  height: auto !important;
-  object-fit: cover !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  border: none !important;
-}
