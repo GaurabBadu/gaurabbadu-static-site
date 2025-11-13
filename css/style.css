@@ -258,10 +258,11 @@
     height: 100%;
     left: 0;
     bottom: 0;
-    background: rgba(13, 110, 253, 0.7);
-    mix-blend-mode: screen;
+    background: rgba(10, 20, 50, 0.15);
+    
     display: flex;
     align-items: center;
+    mix-blend-mode: screen;
 }
 
 .carousel-caption .ticket-form {
