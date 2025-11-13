@@ -49,7 +49,7 @@
         center: false,
         dots: false,
         loop: true,
-        margin: 10,
+        margin: 0,
         nav : true,
         navText : [
             '<i class="fa fa-angle-left"></i>',
