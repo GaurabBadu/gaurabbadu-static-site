@@ -50,6 +50,7 @@
         dots: false,
         loop: true,
         margin: 0,
+        stagePadding: 0, 
         nav : true,
         navText : [
             '<i class="fa fa-angle-left"></i>',
