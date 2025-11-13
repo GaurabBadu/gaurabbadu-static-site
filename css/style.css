@@ -478,6 +478,10 @@
     border-radius: 10px;
     transition: 0.5s;
     z-index: 1;
+     /* --- CRITICAL FIX FOR TIGHT SPACING --- */
+    padding: 0px !important; /* Removes internal padding inherited from Bootstrap col classes */
+    margin: 0px !important; /* Ensures no external margin from Bootstrap is inherited */
+    /* -------------------------------------- */
 }
 
 .attractions .attractions-item::after {
