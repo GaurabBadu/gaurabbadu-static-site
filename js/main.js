@@ -37,7 +37,7 @@
         nav : true,
         navText : [
             '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>'
+            '<i class="bi bi-arrow-down"></i>'
         ],
     });
 
@@ -49,12 +49,11 @@
         center: false,
         dots: false,
         loop: true,
-        margin: 0,
-        stagePadding: 0, 
+        margin: 25,
         nav : true,
         navText : [
-            '<i class="fa fa-angle-left"></i>',
-            '<i class="fa fa-angle-right"></i>'
+            '<i class="fa fa-angle-right"></i>',
+            '<i class="fa fa-angle-left"></i>'
         ],
         responsiveClass: true,
         responsive: {
@@ -90,8 +89,8 @@
         margin: 25,
         nav : true,
         navText : [
-            '<i class="fa fa-angle-left"></i>',
-            '<i class="fa fa-angle-right"></i>'
+            '<i class="fa fa-angle-right"></i>',
+            '<i class="fa fa-angle-left"></i>'
         ],
         responsiveClass: true,
         responsive: {
@@ -136,4 +135,3 @@
 
 
 })(jQuery);
-
