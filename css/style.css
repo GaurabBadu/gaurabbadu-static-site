@@ -259,6 +259,7 @@
     left: 0;
     bottom: 0;
     background: rgba(13, 110, 253, 0.7);
+    mix-blend-mode: screen;
     display: flex;
     align-items: center;
 }
