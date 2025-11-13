@@ -37,7 +37,7 @@
         nav : true,
         navText : [
             '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-down"></i>'
+            '<i class="bi bi-arrow-right"></i>'
         ],
     });
 
@@ -49,10 +49,10 @@
         center: false,
         dots: false,
         loop: true,
-        margin: 15,
+        margin: 10,
         nav : true,
         navText : [
-            '<i class="fa fa-angle-let"></i>',
+            '<i class="fa fa-angle-left"></i>',
             '<i class="fa fa-angle-right"></i>'
         ],
         responsiveClass: true,
@@ -89,8 +89,8 @@
         margin: 25,
         nav : true,
         navText : [
-            '<i class="fa fa-angle-right"></i>',
-            '<i class="fa fa-angle-left"></i>'
+            '<i class="fa fa-angle-left"></i>',
+            '<i class="fa fa-angle-right"></i>'
         ],
         responsiveClass: true,
         responsive: {
