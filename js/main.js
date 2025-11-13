@@ -133,5 +133,28 @@
         return false;
     });
 
+    // Horizontal scroll for projects
+document.addEventListener("DOMContentLoaded", function() {
+    const scrollAmount = 300; // pixels per click
+
+    const rows = document.querySelectorAll(".projects-row"); // give your rows this class
+    rows.forEach(row => {
+        const leftBtn = row.parentElement.querySelector(".scroll-btn.left");
+        const rightBtn = row.parentElement.querySelector(".scroll-btn.right");
+
+        if (leftBtn) {
+            leftBtn.addEventListener("click", () => {
+                row.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            });
+        }
+        if (rightBtn) {
+            rightBtn.addEventListener("click", () => {
+                row.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            });
+        }
+    });
+});
+
+
 
 })(jQuery);
