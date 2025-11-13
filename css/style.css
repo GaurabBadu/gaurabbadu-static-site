@@ -432,6 +432,12 @@
 
 
 /*** Attractions Start ***/
+/* --- FIX: Target the Owl Carousel wrapper (.owl-item) for ultimate gap elimination --- */
+.attractions-carousel .owl-item {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+/* --- END FIX --- */
 .attractions {
     position: relative;
     overflow: hidden;
