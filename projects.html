@@ -117,41 +117,51 @@
 </div>
 
         <!-- Arduino Projects -->
-        <h2 class="text-primary" style="margin-top: 50px; font-weight: bold; background-color: yellow; padding: 5px;">Arduino Projects</h2>
-        <div class="projects-row">
-            <div class="project-item">
-                <img src="img/car.png" alt="NodeMCu Car">
-                <a href="video/car.mp4"><i class="fas fa-search-plus"></i> NodeMCu Controlled Car</a>
-            </div>
-            <div class="project-item">
-                <img src="img/IRsensor.png" alt="Car with IR Sensor">
-                <a href="video/sensor.mp4"><i class="fas fa-search-plus"></i> Car with IR Sensor</a>
-            </div>
-            <div class="project-item">
-                <img src="img/Obstacle.jpeg" alt="Obstacle Avoiding Robot">
-                <a href="video/vd.mp4"><i class="fas fa-search-plus"></i> Obstacle Avoiding Robot</a>
-            </div>
-            <div class="project-item">
-                <img src="img/linefollowing.jpeg" alt="Line Following Robot">
-                <a href="video/vd.mp4"><i class="fas fa-search-plus"></i> Line Following Robot</a>
-            </div>
-            <div class="project-item">
-                <img src="img/waterlevel.jpg" alt="Water Level Indicator">
-                <a href="video/level.mp4"><i class="fas fa-search-plus"></i> Water Level Indicator</a>
-            </div>
-        </div>
+<h2 class="text-primary" style="margin-top: 50px; font-weight: bold; background-color: yellow; padding: 5px;">Arduino Projects</h2>
+<div class="projects-container position-relative">
+    <button class="scroll-btn left"><i class="fas fa-chevron-left"></i></button>
 
-        <!-- Python Projects -->
-        <h2 class="text-primary" style="margin-top: 50px; font-weight: bold; background-color: yellow; padding: 5px;">Python Projects</h2>
-        <div class="projects-row">
-            <div class="project-item">
-                <img src="img/Face.png" alt="Face Recognition">
-                <a href="https://youtu.be/CE8fcOrJuXg"><i class="fas fa-search-plus"></i> Face Recognition Attendance Software</a>
-            </div>
+    <div class="projects-row d-flex gap-3 overflow-auto" id="arduino-row">
+        <div class="project-item">
+            <img src="img/car.png" alt="NodeMCu Car">
+            <a href="video/car.mp4"><i class="fas fa-search-plus"></i> NodeMCu Controlled Car</a>
         </div>
-
+        <div class="project-item">
+            <img src="img/IRsensor.png" alt="Car with IR Sensor">
+            <a href="video/sensor.mp4"><i class="fas fa-search-plus"></i> Car with IR Sensor</a>
+        </div>
+        <div class="project-item">
+            <img src="img/Obstacle.jpeg" alt="Obstacle Avoiding Robot">
+            <a href="video/vd.mp4"><i class="fas fa-search-plus"></i> Obstacle Avoiding Robot</a>
+        </div>
+        <div class="project-item">
+            <img src="img/linefollowing.jpeg" alt="Line Following Robot">
+            <a href="video/vd.mp4"><i class="fas fa-search-plus"></i> Line Following Robot</a>
+        </div>
+        <div class="project-item">
+            <img src="img/waterlevel.jpg" alt="Water Level Indicator">
+            <a href="video/level.mp4"><i class="fas fa-search-plus"></i> Water Level Indicator</a>
+        </div>
     </div>
+
+    <button class="scroll-btn right"><i class="fas fa-chevron-right"></i></button>
 </div>
+
+<!-- Python Projects -->
+<h2 class="text-primary" style="margin-top: 50px; font-weight: bold; background-color: yellow; padding: 5px;">Python Projects</h2>
+<div class="projects-container position-relative">
+    <button class="scroll-btn left"><i class="fas fa-chevron-left"></i></button>
+
+    <div class="projects-row d-flex gap-3 overflow-auto" id="python-row">
+        <div class="project-item">
+            <img src="img/Face.png" alt="Face Recognition">
+            <a href="https://youtu.be/CE8fcOrJuXg"><i class="fas fa-search-plus"></i> Face Recognition Attendance Software</a>
+        </div>
+    </div>
+
+    <button class="scroll-btn right"><i class="fas fa-chevron-right"></i></button>
+</div>
+
 
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
