@@ -155,35 +155,4 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-    document.addEventListener("DOMContentLoaded", function() {
-    const scrollAmount = 300;
-
-    const scrollSections = [
-        { rowId: "solid-row", leftId: "solid-left", rightId: "solid-right" },
-        { rowId: "arduino-row", leftId: "arduino-left", rightId: "arduino-right" },
-        { rowId: "python-row", leftId: "python-left", rightId: "python-right" },
-    ];
-
-    scrollSections.forEach(section => {
-        const row = document.getElementById(section.rowId);
-        const leftBtn = document.getElementById(section.leftId);
-        const rightBtn = document.getElementById(section.rightId);
-
-        if (leftBtn) {
-            leftBtn.addEventListener("click", () => {
-                row.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-            });
-        }
-
-        if (rightBtn) {
-            rightBtn.addEventListener("click", () => {
-                row.scrollBy({ left: scrollAmount, behavior: "smooth" });
-            });
-        }
-    });
-});
-
-
-
-
 })(jQuery);
