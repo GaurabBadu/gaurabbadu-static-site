@@ -215,14 +215,75 @@ I completed my Bachelor’s degree in Mechanical Engineering from Thapathali Cam
 <script src="lib/lightbox/js/lightbox.min.js"></script>
 <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const footerCollapseElement = document.getElementById('footerCollapse');
+        // Since you removed the content wrapper, we'll observe the collapse element itself
+        const bsCollapse = new bootstrap.Collapse(footerCollapseElement, { toggle: false });
+        let observer = null;
+
+        // Function to close the footer
+        function closeFooter() {
+            if (footerCollapseElement.classList.contains('show')) {
+                bsCollapse.hide();
+            }
+        }
+
+        // The core logic: Auto-close using Intersection Observer
+        footerCollapseElement.addEventListener('shown.bs.collapse', function () {
+            // Stop any existing observer before creating a new one
+            if (observer) {
+                observer.unobserve(footerCollapseElement);
+            }
+
+            // Get the current height of the fully expanded footer for calculation
+            const footerHeight = footerCollapseElement.offsetHeight;
+            
+            // Set the rootMargin: The collapse area itself will be the target.
+            // We want it to be considered "out" when the scroll moves up and the element
+            // is scrolled up past the viewport's top edge. We add a small buffer (e.g., 50px).
+            const rootMarginValue = `-${footerHeight + 50}px 0px 0px 0px`;
+            
+            const observerOptions = {
+                root: null, // relative to the viewport
+                rootMargin: rootMarginValue, 
+                threshold: 0 // trigger immediately when margin is crossed
+            };
+
+            observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    // If the entry is no longer intersecting (i.e., it has scrolled up past the rootMargin)
+                    if (!entry.isIntersecting) {
+                        closeFooter();
+                        obs.unobserve(footerCollapseElement); // Stop observing after closing
+                        observer = null;
+                    }
+                });
+            }, observerOptions);
+
+            // Start observing the collapsible footer element itself
+            observer.observe(footerCollapseElement);
+        });
+
+        // Optional: If the user manually closes it, ensure the observer is cleaned up too
+        footerCollapseElement.addEventListener('hidden.bs.collapse', function() {
+            if (observer) {
+                observer.unobserve(footerCollapseElement);
+                observer = null;
+            }
+        });
+    });
+</script>
 
 <script src="js/main.js"></script>
-    <button class="footer-toggle-btn"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#footerCollapse">
-    <i class="fas fa-chevron-down"></i>
-</button>
+<button class="footer-toggle-btn collapsed" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#footerCollapse"
+        aria-expanded="false" 
+        aria-controls="footerCollapse">
+        <i class="fas fa-angle-up"></i>
+    </button>
 
 </body>
 </html>
