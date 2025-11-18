@@ -1,3 +1,17 @@
+.project-item {
+    /* KEY LINE: Centers the image and the text inside the div */
+    text-align: center; 
+}
+
+/* Optional: Recommended CSS for handling the image gracefully */
+.project-item img {
+    max-width: 100%;
+    height: auto;
+    /* Often necessary to prevent layout issues, even with text-align: center */
+    display: block; 
+    margin: 0 auto;
+}
+
 .footer-toggle-btn {
     position: fixed;
     bottom: 30px;
