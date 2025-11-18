@@ -1,3 +1,10 @@
+.attachment-badge a {
+    position: relative;
+    z-index: 10;
+    pointer-events: auto !important;
+}
+
+
 .project-item {
     text-align: center;
     display: flex;
