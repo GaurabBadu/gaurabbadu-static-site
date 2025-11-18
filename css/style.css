@@ -1,6 +1,8 @@
 .project-item {
-    /* KEY LINE: Centers the image and the text inside the div */
-    text-align: center; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Optional: Recommended CSS for handling the image gracefully */
