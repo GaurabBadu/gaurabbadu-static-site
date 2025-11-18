@@ -4,6 +4,11 @@
     pointer-events: auto !important;
 }
 
+.attachment-badge {
+    position: relative;
+    z-index: 5;
+}
+
 
 .project-item {
     text-align: center;
